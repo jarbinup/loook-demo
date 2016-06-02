@@ -21,8 +21,14 @@ ul{
 	background-color: #fff;
 }
 #banner li{
-	/*background-color: red;*/
 	padding: 0.625em;
+}
+
+.all-page{
+    color: green;
+}
+.selected-page{
+    color: red;
 }
 
 .nav{
@@ -37,14 +43,17 @@ ul{
 	background-color: #242425;
 }
 .nav li{
+    flex-grow: 0.9;
 	padding-top: 0.625em;
 	padding-bottom: 0.625em;
+    text-align: center;
 }
 
 .clicked{
     color: #fff;
-    font-size: 16px;
-    border-bottom: 2px solid #fff;
+    font-size: 15px;
+    /*padding-top: 0.625em;*/
+    /*border-bottom: 1px solid #fff;*/
 }
 .conti{
 	margin-top: 40px;
@@ -60,4 +69,18 @@ ul{
     height: 100px;
     width: 100%;
     background-color: #fff;
+}
+
+.section-none{
+    display: none;
+}
+.section-display{
+    display: block;
+}
+
+.page-none{
+    display: none;
+}
+.page-display{
+    display: block;
 }

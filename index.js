@@ -1,21 +1,48 @@
-var getNode = function(ele) {
+function getNode(ele) {
 	return document.querySelector(ele);
 };
 
-var Nav = getNode('.nav');
+function getNodes(ele) {
+	return document.querySelectorAll(ele);
+};
 
-console.log(Nav.childNodes);
+var Li = getNodes('.nav li');
+var Isection = getNodes('#index section');
+var Nav = getNode('.nav');
+var Bar = getNode('#banner');
+var BarLi = getNodes('#banner li');
+var Divs = getNodes('body > div');
+
+console.log(Bar);
+console.log(Li);
 function touchTrigger(event) {
-    var Li = document.querySelectorAll('.nav li');
-    console.log(Li);
-    for (var i = 0 ; i<Li.length; i++) {
-    	Li[i].className = "";
-    }
 	var target = event.target;
+	var j = 0;
+    for (let i = 0 ; i<Li.length; i++) {
+    	Li[i].className = "";
+    	Isection[i].className = "section-none";
+    	if(Li[i] == target) {
+    		j = i;
+    	}  
+    }
 	target.className = "clicked";
-	// target.style.color="#fff";
-	// target.style.borderBottom="2px solid #fff";
-	// target.style.fontSize="16px";
+	Isection[j].className="section-display";
 }
 
+function pageTrigger(event) {
+    var target = event.target;
+    var j = 0;
+    for (let i = 0 ; i<BarLi.length; i++) {
+    	BarLi[i].className = "all-page"; 
+    	Divs[i].className = "page-none"; 
+    	if(BarLi[i] == target) {
+    		j = i;
+    	} 
+    }
+	target.className = "selected-page";
+	Divs[j].className="page-display";
+}
+
+
 Nav.addEventListener("click", touchTrigger, false);
+Bar.addEventListener("click", pageTrigger, false);
