@@ -7,60 +7,15 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
     <link rel="stylesheet" href="index.css">
-
-    <style >
-    #profile{
-    	height: 40em;
-    	background-color: #fff;
-    }
-    .avatar{
-    	width: 100%;
-    	height: 15em;
-    	background-color: #2d2c2d;
-    	color: #fff; 
-    	position: relative;   
-    }
-    .avatar span{
-    	display: inline-block;
-    	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	transform: translate(-50%, -50%);
-    }
-    .avatar img{
-    	width: 6em;
-    	height: 6em;
-    	border-radius: 50%;
-    }
-
-    #profile ul{
-    	display: flex;
-    	width: 100%;
-		justify-content: space-between;
-    }
-
-    #profile li{
-        flex-grow: 1;
-        padding-top: 0.625em;
-        padding-bottom: 0.625em;
-        text-align: center;
-        background-color: #fff;
-        font-size: 15px;
-        border-bottom: 1px solid #f6f6f6;
-    }
-    #profile li:hover,
-    #profile li:active{
-    	color:#d50071;
-    	border-color: #d50071;
-    }
-    </style>
 </head>
 <body>
+
     <ul id="banner">
     	<li class="selected-page">首页</li>
     	<li class="all-page">发现</li>
     	<li class="all-page">我的</li>
     </ul>
+
     <div id="index" class="page-display">
 	    <ul class="nav">
 			<li class="clicked">精选</li>
@@ -95,6 +50,7 @@
 			</div>
 			<div class="show"></div>
 			<div class="show2"></div>
+			<div class="show"></div>
 			
 		</section>
 		<section class="section-none">
@@ -103,29 +59,42 @@
 			</div>
 			<div class="show"></div>
 			<div class="show2"></div>
+			<div class="show"></div>
 		</section>
 		<section class="section-none">
 			<div class="conti">
 				4444444444444
 			</div>
+			<div class="show"></div>
+			<div class="show2"></div>
+			<div class="show"></div>
 			
 		</section>
 		<section class="section-none">
 			<div class="conti">
 				555555555555
 			</div>
+			<div class="show"></div>
+			<div class="show2"></div>
+			<div class="show"></div>
 			
 		</section>
 		<section class="section-none">
 			<div class="conti">
 				6666666666666
 			</div>
+			<div class="show"></div>
+			<div class="show2"></div>
+			<div class="show"></div>
 			
 		</section>
     </div>
+
     <div id="more" class="page-none">
-		12341234
+		<p>12341234</p>
+		<div class="show"></div>
     </div>
+
     <div id="profile" class="page-none">
     	<div class="avatar">
     		<span>
@@ -140,6 +109,8 @@
     		<li>我的订阅</li>
     	</ul>
     </div>
+
     <script src="index.js"></script>
+
 </body>
 </html>

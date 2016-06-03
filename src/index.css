@@ -84,7 +84,6 @@ ul{
 	float: left;
 	margin-top: 2px;
 	margin-left: 10px;
-	/*position: absolute;*/
 }
 
 .section-none{
@@ -99,4 +98,49 @@ ul{
 }
 .page-display{
     display: block;
+}
+
+#profile{
+	height: 40em;
+	background-color: #fff;
+}
+.avatar{
+	width: 100%;
+	height: 15em;
+	background-color: #2d2c2d;
+	color: #fff; 
+	position: relative;   
+}
+.avatar span{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.avatar img{
+	width: 6em;
+	height: 6em;
+	border-radius: 50%;
+}
+
+#profile ul{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#profile li{
+    flex-grow: 1;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    text-align: center;
+    background-color: #fff;
+    font-size: 15px;
+    border-bottom: 1px solid #f6f6f6;
+}
+#profile li:hover,
+#profile li:active{
+	color:#d50071;
+	border-color: #d50071;
 }

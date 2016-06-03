@@ -13,8 +13,6 @@ var Bar = getNode('#banner');
 var BarLi = getNodes('#banner li');
 var Divs = getNodes('body > div');
 
-alert('123');
-alert(Li);
 function touchTrigger(event) {
 	var target = event.target;
 	var j = 0;
@@ -43,36 +41,27 @@ function pageTrigger(event) {
 	Divs[j].className="page-display";
 }
 
-// var move = getNode('.show2 ul');
-// 获取元素和初始值
-// var disX = 0;
-// 容器鼠标按下事件
-// move.onmousedown = function (event){
-//     // var e = e || window.event;
-//     disX = event.clientX - this.offsetLeft;
-//     console.log(disX);
-//     console.log(event.clientX);
-//     console.log(this.offsetLeft);
-//     // disY = e.clientY - this.offsetTop;
-//     move.onmousemove = function (event){
-//         // var e = e || window.event;
-//         move.style.left = (event.clientX - disX) + 'px';
-//         console.log((event.clientX - disX) + 'px');
-//         // move.style.top = (e.clientY - disY) + 'px';
-//     };
-//     move.onmouseup = function (){
-//         move.onmousemove = null;
-//         .onmouseup = null;
-//     };
-//     return false;
-// };
+var move = getNode('.show2 ul');
+var disX = 0;
+
+move.onmousedown = function (event){
+    disX = event.clientX - this.offsetLeft;
+    console.log(disX);
+    console.log(event.clientX);
+    console.log(this.offsetLeft);
+    move.onmousemove = function (event){
+        move.style.left = (event.clientX - disX) + 'px';
+        console.log((event.clientX - disX) + 'px');
+    };
+    move.onmouseup = function (){
+        move.onmousemove = null;
+        move.onmouseup = null;
+    };
+    return false;
+};
 
 Nav.addEventListener("click", touchTrigger, false);
 Bar.addEventListener("click", pageTrigger, false);
-// move.addEventListener("click", moveChange, false);
-// move.addEventListener("mousedown", moveChange1, false);
-// move.addEventListener("mousemove", moveChange2, false);
-// move.addEventListener("mouseup", moveChange3, false);
 
 
 
