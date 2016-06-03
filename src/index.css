@@ -1,4 +1,4 @@
-body,ul,div,li,a{
+body,ul,div,li,a,p,span,img{
 	margin: 0;
 	padding: 0;
 }
@@ -16,6 +16,7 @@ ul{
 	justify-content: space-around;
 	height: 8%;
 	position: fixed;
+	z-index: 10;
 	bottom: 0;
 	border-top: 1px solid #b2bac3;
 	background-color: #fff;
@@ -25,10 +26,10 @@ ul{
 }
 
 .all-page{
-    color: green;
+    color: #999999;
 }
 .selected-page{
-    color: red;
+    color: #000;
 }
 
 .nav{
@@ -52,8 +53,6 @@ ul{
 .clicked{
     color: #fff;
     font-size: 15px;
-    /*padding-top: 0.625em;*/
-    /*border-bottom: 1px solid #fff;*/
 }
 .conti{
 	margin-top: 40px;
@@ -62,13 +61,30 @@ ul{
     background-color: #fff;
 }
 .show{
-    height: 200px;
+    height: 150px;
     width: 100%;
 }
 .show2{
     height: 100px;
     width: 100%;
     background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.show2 ul{
+	width: 1000px;
+	position: absolute;
+	z-index: 1;
+	left: -180px;
+}
+.show2 li{
+	width: 90px;
+	height: 95px;
+	outline: 1px solid red;
+	float: left;
+	margin-top: 2px;
+	margin-left: 10px;
+	/*position: absolute;*/
 }
 
 .section-none{
