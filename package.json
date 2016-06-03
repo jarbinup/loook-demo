@@ -1,0 +1,26 @@
+{
+  "name": "loook-demo",
+  "version": "1.0.0",
+  "description": "loook demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarbinup/loook-demo.git"
+  },
+  "keywords": [
+    "loook",
+    "app"
+  ],
+  "author": "jarbinup",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.x"
+  },
+  "bugs": {
+    "url": "https://github.com/jarbinup/loook-demo/issues"
+  },
+  "homepage": "https://github.com/jarbinup/loook-demo#readme"
+}

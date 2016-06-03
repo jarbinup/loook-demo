@@ -1,0 +1,146 @@
+body,ul,div,li,a,p,span,img{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #eeeeee;
+}
+
+ul{
+	list-style: none;
+}
+
+#banner{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	height: 8%;
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	border-top: 1px solid #b2bac3;
+	background-color: #fff;
+}
+#banner li{
+	padding: 0.625em;
+}
+
+.all-page{
+    color: #999999;
+}
+.selected-page{
+    color: #000;
+}
+
+.nav{
+	display: flex;
+	width: 100%;
+	height: 40px;
+	justify-content: space-around;
+	position: fixed;
+	top: 0;
+	color: #8f8f90;
+    font-size: 14px;
+	background-color: #242425;
+}
+.nav li{
+    flex-grow: 0.9;
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+    text-align: center;
+}
+
+.clicked{
+    color: #fff;
+    font-size: 15px;
+}
+.conti{
+	margin-top: 40px;
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+}
+.show{
+    height: 150px;
+    width: 100%;
+}
+.show2{
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.show2 ul{
+	width: 1000px;
+	position: absolute;
+	z-index: 1;
+	left: -180px;
+}
+.show2 li{
+	width: 90px;
+	height: 95px;
+	outline: 1px solid red;
+	float: left;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+.section-none{
+    display: none;
+}
+.section-display{
+    display: block;
+}
+
+.page-none{
+    display: none;
+}
+.page-display{
+    display: block;
+}
+
+#profile{
+	height: 40em;
+	background-color: #fff;
+}
+.avatar{
+	width: 100%;
+	height: 15em;
+	background-color: #2d2c2d;
+	color: #fff; 
+	position: relative;   
+}
+.avatar span{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.avatar img{
+	width: 6em;
+	height: 6em;
+	border-radius: 50%;
+}
+
+#profile ul{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#profile li{
+    flex-grow: 1;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    text-align: center;
+    background-color: #fff;
+    font-size: 15px;
+    border-bottom: 1px solid #f6f6f6;
+}
+#profile li:hover,
+#profile li:active{
+	color:#d50071;
+	border-color: #d50071;
+}
